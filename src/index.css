@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+@theme {
+  --color-mayo-orange: #FF6B00;
+  --color-mayo-dark: #E55E00;
+  --color-mayo-cream: #FFF8F0;
+  --color-mayo-black: #1A1A1A;
+  --color-deli-blue: #3B82F6;
+
+  --font-display: "Bricolage Grotesque", sans-serif;
+  --font-body: "DM Sans", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  color: var(--color-mayo-black);
+  background-color: #ffffff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Deli Paper Checkerboard Pattern */
+.deli-check {
+  --check-color-1: var(--color-deli-blue);
+  --check-color-2: #ffffff;
+  --check-size: 24px;
+  background-image: repeating-conic-gradient(
+    var(--check-color-1) 0% 25%,
+    var(--check-color-2) 0% 50%
+  );
+  background-size: var(--check-size) var(--check-size);
+}
+
+.deli-check-sm {
+  --check-size: 16px;
+}
+
+.deli-check-lg {
+  --check-size: 32px;
+}
