@@ -21,7 +21,7 @@ export default function Footer() {
               href="https://instagram.com/nomayosandwich"
               target="_blank"
               rel="noopener noreferrer"
-              onClick={() => gtag('event', 'instagram_click', { event_category: 'social', event_label: 'footer_instagram' })}
+              onClick={() => window.gtag('event', 'instagram_click', { event_category: 'social', event_label: 'footer_instagram' })}
               className="text-white/60 hover:text-mayo-orange transition-colors"
               aria-label="Instagram"
             >
@@ -35,7 +35,7 @@ export default function Footer() {
               href="https://order.storekit.com/no-mayo/menu"
               target="_blank"
               rel="noopener noreferrer"
-              onClick={() => gtag('event', 'order_click', { event_category: 'conversion', event_label: 'footer_order' })}
+              onClick={() => window.gtag('event', 'order_click', { event_category: 'conversion', event_label: 'footer_order' })}
               className="text-white/60 hover:text-mayo-orange transition-colors text-sm font-medium"
             >
               Order

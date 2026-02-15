@@ -92,7 +92,7 @@ export default function Menu() {
             href="https://order.storekit.com/no-mayo/menu"
             target="_blank"
             rel="noopener noreferrer"
-            onClick={() => gtag('event', 'order_click', { event_category: 'conversion', event_label: 'menu_order' })}
+            onClick={() => window.gtag('event', 'order_click', { event_category: 'conversion', event_label: 'menu_order' })}
             className="inline-block bg-mayo-orange text-white font-display font-bold text-lg px-10 py-4 rounded-full hover:bg-mayo-dark transition-colors shadow-lg hover:shadow-xl"
           >
             Order This Week's Drop
