@@ -57,6 +57,7 @@ export default function InstagramFeed() {
                 href="https://instagram.com/nomayosandwich"
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick={() => gtag('event', 'instagram_click', { event_category: 'social', event_label: `feed_image_${i + 1}` })}
               >
               <img
                 src={img.src}
@@ -92,6 +93,7 @@ export default function InstagramFeed() {
             href="https://instagram.com/nomayosandwich"
             target="_blank"
             rel="noopener noreferrer"
+            onClick={() => gtag('event', 'instagram_click', { event_category: 'social', event_label: 'feed_follow_button' })}
             className="inline-flex items-center gap-2 border-2 border-mayo-black text-mayo-black font-display font-bold px-8 py-3 rounded-full hover:bg-mayo-black hover:text-white transition-colors"
           >
             <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">

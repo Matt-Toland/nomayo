@@ -62,6 +62,7 @@ export default function About() {
               variants={fadeUp}
               custom={4}
               href="#menu"
+              onClick={() => gtag('event', 'cta_click', { event_category: 'engagement', event_label: 'about_see_menu' })}
               className="inline-block bg-mayo-orange text-white font-display font-bold text-lg px-8 py-4 rounded-full hover:bg-mayo-dark transition-colors shadow-lg"
             >
               See This Week's Menu

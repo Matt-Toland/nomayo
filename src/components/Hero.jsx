@@ -59,12 +59,14 @@ export default function Hero() {
             >
               <a
                 href="#menu"
+                onClick={() => gtag('event', 'cta_click', { event_category: 'engagement', event_label: 'hero_order' })}
                 className="bg-white text-mayo-orange font-display font-bold text-lg px-8 py-4 rounded-full hover:bg-mayo-cream transition-colors shadow-lg"
               >
                 Order This Week's Drop
               </a>
               <a
                 href="#about"
+                onClick={() => gtag('event', 'cta_click', { event_category: 'engagement', event_label: 'hero_how_it_works' })}
                 className="text-white/90 font-medium hover:text-white transition-colors underline underline-offset-4"
               >
                 How it works &darr;
