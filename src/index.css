@@ -35,6 +35,7 @@ body {
     var(--check-color-2) 0% 50%
   );
   background-size: var(--check-size) var(--check-size);
+  background-repeat: round;
 }
 
 .deli-check-sm {
@@ -42,5 +43,11 @@ body {
 }
 
 .deli-check-lg {
-  --check-size: 32px;
+  --check-size: 24px;
+}
+
+@media (min-width: 768px) {
+  .deli-check-lg {
+    --check-size: 32px;
+  }
 }
