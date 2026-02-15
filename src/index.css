@@ -20,6 +20,7 @@ body {
   font-family: var(--font-body);
   color: var(--color-mayo-black);
   background-color: #ffffff;
+  overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

@@ -9,17 +9,7 @@ export default function Hero() {
       className="relative min-h-screen deli-check deli-check-lg flex items-center justify-center p-3 sm:p-5 md:p-6"
     >
       {/* Orange inner panel */}
-      <div className="relative w-full h-full min-h-[calc(100vh-24px)] sm:min-h-[calc(100vh-40px)] md:min-h-[calc(100vh-48px)] bg-mayo-orange rounded-sm overflow-hidden flex items-center justify-center">
-        {/* Background hero image — positioned right on desktop, centered on mobile */}
-        <motion.img
-          initial={{ opacity: 0, y: 40 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, delay: 0.3 }}
-          src={heroImage}
-          alt="Daniel holding sandwiches"
-          className="absolute bottom-0 h-[42vh] md:h-[65vh] object-contain select-none pointer-events-none drop-shadow-2xl left-1/2 -translate-x-1/2 md:left-auto md:translate-x-0 md:right-[2%]"
-        />
-
+      <div className="relative w-full min-h-[calc(100vh-24px)] sm:min-h-[calc(100vh-40px)] md:min-h-[calc(100vh-48px)] bg-mayo-orange rounded-sm overflow-hidden flex flex-col items-center justify-start md:justify-center pt-8 md:pt-0">
         <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 text-center md:text-left w-full">
           <div className="md:max-w-2xl">
             <motion.img
@@ -74,6 +64,16 @@ export default function Hero() {
             </motion.div>
           </div>
         </div>
+
+        {/* Hero image — stacked below content on mobile, absolutely positioned on desktop */}
+        <motion.img
+          initial={{ opacity: 0, y: 40 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, delay: 0.3 }}
+          src={heroImage}
+          alt="Daniel holding sandwiches"
+          className="relative mt-6 md:mt-0 md:absolute md:bottom-0 h-[42vh] md:h-[65vh] max-w-full object-contain select-none pointer-events-none drop-shadow-2xl md:right-[2%]"
+        />
 
         {/* Scroll indicator */}
         <motion.div
